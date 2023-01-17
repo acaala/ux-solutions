@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="home">
+        <div class="home__hero">
+            <div class="home__hero__content">
+
+                <h1>UX Solutions</h1>
+                <p>A Quick Example</p>
+            </div>
+        </div>
+
+
+
+        <div class="home__slides">
+            {{ include('home/_slide.html.twig', {'title': 'First Example', id: 'slide-1' }) }}
+
+            {{ include('home/_slide.html.twig', {'title': 'Second Similar Example', id: 'slide-2' }) }}
+
+            {{ include('home/_slide.html.twig', {'title': 'One More Similar Example', id: 'slide-3' }) }}
+            {{ include('home/_slide-numbered.html.twig', {'title': 'Example with big numbers', id: 'slide-4-number' }) }}
+        </div>
+    </div>
+{% endblock %}
