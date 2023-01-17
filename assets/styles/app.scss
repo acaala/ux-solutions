@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body {
+    background-color: black;
+    color: #fff;
+    font-family: 'Open Sans';
+}
+
+
+.home {
+    &__hero {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+
+        &__content {
+            h1 {
+                font-size: 4rem;
+                margin: 0;
+                letter-spacing: .15rem;
+            }
+
+            p {
+                font-size: 1rem;
+                letter-spacing: .4px;
+                margin-bottom: 1rem;
+            }
+
+            button {
+                background-color: white;
+                color: black;
+                padding: .2rem .5rem;
+                border-radius: .2rem;
+            }
+        }
+    }
+
+
+    &__slides {
+        margin: -8rem 0 4rem;
+        padding: 0 2rem;
+    }
+}
+
+.slide {
+    margin-bottom: 4rem;
+    h3 {
+        margin-bottom: .5rem;
+    }
+
+    &__single--numbered {
+        display: flex;
+        justify-content: center;
+        gap: .5rem;
+      align-items: center;
+        p {
+            font-size: 14rem;
+        }
+    }
+}
+
+.test {
+    color: black;
+    background: rgba(0,0,0,.2) !important;
+    height: 100% !important;
+    width: 75px !important;
+    border-radius: 0 !important;
+}
+
+.splide__arrow svg {
+    height: 100px !important;
+    width: 50px !important;
+    color: white;
+}
+
+.splide__arrow--next {
+    right: 0 !important;
+}
+
+.splide__arrow--prev {
+    left: 0 !important;
+}
